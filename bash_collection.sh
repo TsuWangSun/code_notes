@@ -1,7 +1,13 @@
+# apt
+sudo apt install xxxx
+# remove
+sudo apt remove xxxx
+sudo apt purge xxxx
+sudo apt autoremove
+sudo apt autoclean
 
 #grep
 grep -rl 'search_text_in_files'
-
 
 
 
