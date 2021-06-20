@@ -5,6 +5,10 @@ sudo apt remove xxxx
 sudo apt purge xxxx
 sudo apt autoremove
 sudo apt autoclean
+# check & update
+apt list --installed
+sudo apt update
+sudo apt upgrade
 
 #grep
 grep -rl 'search_text_in_files'
