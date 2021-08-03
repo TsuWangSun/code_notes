@@ -1,4 +1,4 @@
-git init
+git status
+git push .
 git commit -m "xxxxxx"
-git push -u origin
 git push origin
