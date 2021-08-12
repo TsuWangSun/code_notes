@@ -1,3 +1,6 @@
+#mount
+sshfs stud14@140.109.90.240:~/server_dir ~/local_dir
+
 # apt
 sudo apt install xxxx
 # remove
