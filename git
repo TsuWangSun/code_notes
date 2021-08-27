@@ -1,8 +1,19 @@
+# from scratch
+#echo "# GiantVirusEvoGenome" >> README.md
+git init
+git add .
+git commit -m "initialize01"
+git branch -M main
+git remote add origin git@github.com:TsuWangSun/GiantVirusEvoGenome.git
+git push -u origin main
+
+
 # gogo
 git status
 git add .
 git commit -m "xxxxxx"
 git push
+
 
 
 git init
