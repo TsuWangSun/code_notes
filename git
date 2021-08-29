@@ -12,7 +12,7 @@ git push -u origin main
 git status
 git add .
 git commit -m "xxxxxx"
-git push
+git push -f
 
 
 
