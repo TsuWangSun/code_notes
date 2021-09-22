@@ -40,6 +40,12 @@ done
 expr 1 + 1
 
 
+#jupyter on server
+ssh -L 8080:localhost:8080 stsuwang@koa.local # local
+jupyter notebook --no-browser --port=8080 # server, after former command
+
+
+
 
 
 
