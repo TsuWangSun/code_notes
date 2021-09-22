@@ -45,6 +45,17 @@ ssh -L 8080:localhost:8080 stsuwang@koa.local # local
 jupyter notebook --no-browser --port=8080 # server, after former command
 
 
+# mount
+sshfs stsuwang@koa.local:/kulab/data/storage/stsuwang/ ~/koa.local
+sshfs stsuwang@koa.local:/kulab/scratch/stsuwang/ ~/ku_scratch
+
+
+# screen
+screen -S stsuwang_job1
+ctrl+AD
+screen -list
+screen -r 23518
+
 
 
 
