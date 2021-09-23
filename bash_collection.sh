@@ -49,6 +49,13 @@ jupyter notebook --no-browser --port=8080 # server, after former command
 sshfs stsuwang@koa.local:/kulab/data/storage/stsuwang/ ~/koa.local
 sshfs stsuwang@koa.local:/kulab/scratch/stsuwang/ ~/ku_scratch
 
+# link / shortcut
+ln -s -T /mother_path/ /link_path_new_dir/
+
+# file and dir size
+sudo du -h --max-depth=1
+alias siize='sudo du -h --max-depth=1' # in .bashrc
+
 
 # screen
 screen -S stsuwang_job1
@@ -57,6 +64,8 @@ screen -list
 screen -r 23518
 
 
+# add path to .bashrc (sys var)
+export PATH=/path/dir:$PATH
 
 
 
