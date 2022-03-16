@@ -87,6 +87,8 @@ fi
 done < acs1013.txt
 
 # else
+
+# ffmpeg
 # add picture to audio
 ffmpeg -r 1 -loop 1 -y -i PICTURE.png \
 -i AUDIO.mp3 -c:a copy -r 1 -vcodec libx264 \
@@ -97,6 +99,10 @@ do ffmpeg -r 1 -loop 1 -y -i black.png \
 -i $x -c:a copy -r 1 -vcodec libx264 \
 -shortest -vf scale=1280:720 $x.avi; 
 done
+
+# cut movie
+ffmpeg -ss 00:00:00 -to 00:06:50  -i INPUT.mp4 -c copy OUTPUT.mp4
+
 
 # unzip partition zip file / multiple parts
 for x in *.zip; do unzip -d /folderPATH/ -o -u $x & done
